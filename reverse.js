@@ -16,3 +16,11 @@ function reverseString(str) {
 }
 console.log(reverseString("hello"));
 reverseString("hello");
+
+
+
+
+// `function reverseString(str) {
+//     return str.split("").reverse().join("");
+// }
+// reverseString("hello");`
