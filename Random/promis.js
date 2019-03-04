@@ -1,7 +1,6 @@
+
 let userLeft = false
 let userWatchingCatMeme = false
-
-
 let p = new Promise((resolve, reject) => {
     let a = 1 + 2;
     if (a == 2) {
@@ -17,9 +16,11 @@ p.then(
         console.log('then ' + message)
     }
 ).catch(
+
     (message) => {
-        console.log('then' + message)
+        console.log('then ' + message)
     }
+
 )
 
 
