@@ -1,4 +1,5 @@
-const bubbleSort = (array) => {
+const bubbleSort = (array) => 
+{
     for (let i = 0; i < array.length; i++) {
       for (let x = 0; x < array.length - 1 - i; x++) {
         if (array[x] > array[x + 1]) {
