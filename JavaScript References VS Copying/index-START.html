@@ -5,15 +5,10 @@
   <title>JS Reference VS Copy</title>
 </head>
 <body>
-
   <script>
-
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
-
-    const team =  players ;
-
+    const team = players;
     console.log( players , team);
-
     team4 = [...players];
     console.log(team4);
     team5 = Array.from(players);
@@ -22,28 +17,14 @@
     const team3 = [].concat(players);
     team2[3]= 'Lux';
     console.log(team3);
-
-
-
     const person = {
+
       name: 'Wes Bos',
       age: 80
+
     };
 
-    //copy and manupulating objects
-
-    
-    const person2 = Object.assign({}, person , { name : 'Arafat' , number : 12 });
-
-
-    // and think we make a copy:
-
-    // how do we take a copy instead?
-
-    // We will hopefully soon see the object ...spread
-
-    // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
-
+    const person2 = Object.assign( {}, person , { name : 'Arafat' , number : 12 } );
   </script>
 
 </body>
