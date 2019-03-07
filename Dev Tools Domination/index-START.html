@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // Regular
+
+     console.log('Its normal .1');
+
+    // Interpolated
+     console.log('Hi its interpolated %s' , '.2');
+
+    // Styled
+
+    console.log('%c I am styled .3' ,'font-size:20px;');
+
+    // warning!
+
+    console.warn('Oh i am warn .4 !');
+
+    // Error :|
+
+    console.error('Oh i am error .5 !');
+
+    // Info
+
+    console.info('Oh i am info .6 !');
+
+
+    // Testing
+
+
+    console.assert( 1===2 , "I am wrong assertion .7 !")
+
+    // clearing
+
+
+    //console.clear();
+
+
+    // Grouping together
+
+    // dogs.forEach(dog => {
+    //   console.groupCollapsed(`${dog.name}`);
+    //   console.log(`This is ${dog.name}`);
+    //   console.log(`${dog.name} is ${dog.age} years old`);
+    //   console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+    //   console.groupEnd(`${dog.name}`);
+    // });
+
+    // counting
+
+    console.count('omer');
+    console.count('omer');
+    console.count('arafat');
+    console.count('arafat');
+    console.count('Wes');
+    console.count('arafat');
+    console.count('Wes');
+    console.count('arafat');
+    console.count('Steve');
+    console.count('Steve');
+    console.count('arafat');
+    console.count('Steve');
+
+    console.clear();
+    // timing
+    console.time('fetching data');
+    fetch('https://api.github.com/users/arafatomer66')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data.bio);
+      });
+
+
+
+  </script>
+</body>
+</html>
