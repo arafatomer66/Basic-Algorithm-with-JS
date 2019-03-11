@@ -10,8 +10,6 @@ const sentence = createSentence(words , puncuation);
 
 console.log(sentence) ;
 
-
-
 // getUserPosts - more specific 
 
 // findUserByEmail - more specific
