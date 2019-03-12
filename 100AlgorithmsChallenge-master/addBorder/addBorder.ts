@@ -1,5 +1,6 @@
 function addBorder(picture: string[]): string[] 
-{   let wall = '*'.repeat(picture[0].length + 2);
+{   
+    let wall = '*'.repeat(picture[0].length + 2);
 //    let lengthOfWall =  picture[0].length +2 ;
 
 //    for(let i = 0 ; i < lengthOfWall ; i++){
