@@ -1,8 +1,7 @@
 function addTwoDigits(n: any): number {
    let num = n.toString().split('');
    return num.reduce((a : string , b : string) => {
-       let  sum = parseInt(a) +  parseInt(b ) ;
-       return sum ;
+       return parseInt(a) +  parseInt(b ) ;
    });
 }
 
