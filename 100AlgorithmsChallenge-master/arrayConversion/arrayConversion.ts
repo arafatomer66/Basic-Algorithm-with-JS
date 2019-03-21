@@ -9,12 +9,12 @@ function arrayConversion(inputArray: number[]): number {
 function someProducts( nums : number[] , isOdd : boolean ) : number[]{
     let  somePro : number[] = [] ;
     if(isOdd){
-        for(let i =  0 ; i < nums.length ; i = i + 2 ){
+        for(    let i =  0 ; i < nums.length ; i = i + 2     ){
             somePro.push(nums[i] + nums[i+1]) 
         }
     } else{
-        for(let i =  0 ; i < nums.length ; i = i + 2 ){
-            somePro.push(nums[i] * nums[i+1]) 
+        for(    let i =  0 ; i < nums.length ; i = i + 2    ){
+            somePro.push(   nums[i] * nums[i+1]    ) 
         }
     }
     return somePro  ;
