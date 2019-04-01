@@ -1,5 +1,5 @@
 function evenDigitsOnly(n: number): boolean {
-
+   return 
 }
 
 console.log(evenDigitsOnly(248622));
