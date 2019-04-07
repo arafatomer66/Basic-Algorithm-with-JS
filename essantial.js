@@ -109,3 +109,16 @@ console.log(JSON.stringify({ alpha: 'A', beta: 'B' }, null, '\t'));
 //     "beta": B
 // }'
 
+
+// Instead of using…
+
+var sum = 0;  
+for (var i in arrayNumbers) {  
+    sum += arrayNumbers[i];  
+ }
+// …it’s better to use…
+
+var sum = 0;  
+for (var i = 0, len = arrayNumbers.length; i < len; i++) {  
+    sum += arrayNumbers[i];  
+}
