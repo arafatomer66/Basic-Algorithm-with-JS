@@ -2,7 +2,7 @@
 
 // Instead of using…
 
-var object = ['foo', 'bar'], i;  
+let object = ['foo', 'bar'], i;  
 for (i = 0, len = object.length; i <len; i++) {  
     try {  
         // do something that throws an exception 
@@ -13,7 +13,7 @@ for (i = 0, len = object.length; i <len; i++) {
 }
 // …use…
 
-var object = ['foo', 'bar'], i;  
+let object = ['foo', 'bar'], i;  
 try { 
     for (i = 0, len = object.length; i <len; i++) {  
         // do something that throws an exception 
@@ -22,3 +22,4 @@ try {
 catch (e) {   
     // handle exception  
 } 
+
