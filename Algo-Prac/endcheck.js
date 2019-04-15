@@ -13,3 +13,4 @@ function confirmEnding(string, target) {
     return string.endsWith(target); // 'Bastian'.endsWith('n')
   }
   confirmEnding('Bastian', 'n');
+     
