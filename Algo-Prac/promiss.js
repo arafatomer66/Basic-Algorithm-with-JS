@@ -16,8 +16,10 @@ const getWeather = url => {
 
   httpReq.send()
   })
+   9 
 }
 
 getWeather('https://api/some/endpoint')
   .then(resp => console.log(resp))
-  .catch(reason => console.log(reason))
+  .catch(reason => console.log(reason)   
+  )

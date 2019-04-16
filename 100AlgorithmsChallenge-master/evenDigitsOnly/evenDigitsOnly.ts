@@ -1,5 +1,8 @@
 function evenDigitsOnly(n: number): boolean {
-   return 
+   const digit =  n.toString().split('');
+   
+   return digit.every((element) => parseInt( element ) % 2 === 0
+   ) ;
 }
 
 console.log(evenDigitsOnly(248622));
