@@ -1,4 +1,7 @@
 function findEmailDomain(address: string): string {
+   let lastIndex : number = address.lastIndexOf('@');
+
+   return address.slice(lastIndex+1 , address.length)
 
 }
 
