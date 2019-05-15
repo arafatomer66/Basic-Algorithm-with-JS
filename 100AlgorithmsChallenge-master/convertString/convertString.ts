@@ -1,4 +1,8 @@
-function convertString(s: string, t: string): boolean {
+function convertString(s: string, t: string) {
+     
+    let word : string = '' ;
+    
+
 
 }
 
